@@ -41,11 +41,19 @@ class ApiController extends Controller {
                     }
                     break;
                 case 'sync':
-                    $power = Data::model()->power()->find()->value;
-                    $energy = Data::model()->energy()->find()->value;
+                    $temp = round(Data::model()->temp()->find()->value);
+                    $power = round(Data::model()->power()->find()->value);
+                    $date = strtotime(Data::model()->power()->find()->created_at);
+                    $energy = round(Data::model()->energy()->find()->value*720);
                     $price=Yii::app()->params["price"];
-                    $money=$energy * $price;
-                    $models=array("power"=>$power,"energy"=>$energy,"money"=>$money);
+                    $money=round($energy * $price);
+                    $models=array(
+                        "power"=>$power,
+                        "energy"=>$energy,
+                        "money"=>$money,
+                        "temp"=>$temp,
+                        "date"=>$date,
+                    );
                     break;
                 default:
                     // Model not implemented error

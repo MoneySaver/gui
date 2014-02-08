@@ -31,9 +31,11 @@ class SiteController extends Controller
 		// using the default layout 'protected/views/layouts/main.php'
 		$power=Data::model()->power()->find()->value;
 		$energy=Data::model()->energy()->find()->value;
+		$temp=Data::model()->temp()->find()->value;		
 		$this->render('index',array(
 			'power'=>$power,
 			'energy'=>$energy,
+			'temp'=>$temp,
 		));
 	}
 	public function actionError()

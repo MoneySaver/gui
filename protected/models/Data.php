@@ -55,16 +55,58 @@ class Data extends CActiveRecord
 		return array(
 		);
 	}
-	public function getState(){
-		$maxrange=254;
+/*	public function afterFind() {
+
+		parent::afterFind();
+	}
+*/	public function getState(){
+		$maxrange=255;
 
 		$val=($this->value>=$maxrange)?$maxrange:$this->value;
 		$b=0;		
 		$r=0;
-		$g=round(254*$val/$maxrange);
-
+		$g=round(255*$val/$maxrange);
 		
-		return $r.",".$g.",".$b;
+/*		if ($this->value<50){
+			$r=0;
+			$g=254;
+			$b=0;
+		}elseif($this->value<70){
+			$r=0;
+			$g=0;
+			$b=254;
+		}elseif($this->value<90){
+			$r=154;
+			$g=100;
+			$b=100;
+		}elseif($this->value<100){
+			$r=154;
+			$g=100;
+			$b=100;
+		}elseif($this->value<120){
+			$r=150;
+			$g=10;
+			$b=200;		
+		}elseif($this->value<150){
+			$r=250;
+			$g=30;
+			$b=30;	
+		}else{
+			$r=254;
+			$g=0;
+			$b=0;
+		}
+		$r=round(254*$val/$maxrange);
+		return $r.",".$g.",".$b;*/
+
+		if ($this->value<100){
+			$a1="0";
+		}else{
+			$a1="255";
+		}
+		$a2=round(255*$val/$maxrange);
+		return $a1.",".$a2;
+
 	}
 	/**
 	 * @return array customized attribute labels (name=>label)
@@ -90,6 +132,11 @@ class Data extends CActiveRecord
                 'order'=>$this->getTableAlias(false,false) . ".created_at DESC",
                 'limit'=>1,
                 'condition'=>$this->getTableAlias(false,false) . ".sensor='Energy1'",
+            ),
+            'temp'=>array(
+                'order'=>$this->getTableAlias(false,false) . ".created_at DESC",
+                'limit'=>1,
+                'condition'=>$this->getTableAlias(false,false) . ".sensor='temperatuur'",
             ),
         );
     }

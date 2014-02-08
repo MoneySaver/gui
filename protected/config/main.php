@@ -8,7 +8,7 @@ Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Money Saver',
+	'name'=>'Sensey',
 	// preloading 'log' component
 	'preload'=>array('log','bootsrtap'),
 
@@ -96,6 +96,6 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
-		'price'=>1.04,
+		'price'=>0.34,
 	),
 );

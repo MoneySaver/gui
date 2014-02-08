@@ -4,31 +4,40 @@ $this->pageTitle=Yii::app()->name;
 $price=Yii::app()->params["price"];
 $money=$energy * $price;
 ?>
-<div class="row">
-<div class="span10">
-<h1>Money and Energy monitor</h1>
+<div class="row" style="margin-top: 20px;">
+    <div class="span6">
+        <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/logo.png" alt="logo">
+    </div>
+    <div class="span4">
+        <h1>Energy and Temperature monitor</h1>
+    </div>
+    <div class="span2">
+        <h3 class="pull-right">kWh - <?php echo $price; ?> €</h3>
+    </div>
 </div>
-<div class="span2">
-<h3 class="pull-right">kW/h - <?php echo $price; ?> €</h3>
-</div>
-</div>
-<div class="row">
-<div class="span4">
+<div class="row" style="margin-top: 20px;">
+<div class="span3">
 	<div class="hero-unit">
-		<h1 id="power"><?php echo $power; ?></h1>
-	<p>Power in Watts</p>
+		<h1 id="power"><?php echo round($power); ?></h1>
+	<p><small>Current power, W</small></p>
 	</div>
 </div>
-<div class="span4">
+<div class="span3">
 	<div class="hero-unit">
-		<h1 id="energy"><?php echo $energy; ?></h1>
-	<p>Energy in kW/h</p>
+		<h1 id="energy"><?php echo round($energy*720); ?></h1>
+	<p><small>Monthly energy, kWh</small></p>
 	</div>
 </div>
-<div class="span4">
+<div class="span3">
+    <div class="hero-unit">
+        <h1 id="temp"><?php echo round($temp); ?></h1>
+    <p><small>Temperature, °C</small></p>
+    </div>
+</div>
+<div class="span3">
 	<div class="hero-unit">
-		<h1 id="money"><?php echo $money; ?></h1>
-	<p>Money in Euros</p>
+		<h1 id="money"><?php echo round($money*720); ?></h1>
+	<p><small>Monthly bill, €</small></p>
 	</div>
 </div>
 </div>
@@ -42,6 +51,7 @@ var i = setInterval(function () {
                 $("#power").text(json.power);
                 $("#energy").text(json.energy);
                 $("#money").text(json.money);
+                $("#temp").text(json.temp);            
             },
 
             error: function (){

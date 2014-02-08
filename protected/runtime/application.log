@@ -1,0 +1,485 @@
+2014/02/08 11:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---
+2014/02/08 12:17:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---
+2014/02/08 12:17:42 [error] [exception.CException] exception 'CException' with message 'Property "Data.value1" is not defined.' in /home/a/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/a/www/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('value1')
+#1 /home/a/www/garage48/gui/protected/models/Data.php(108): CActiveRecord->__get('value1')
+#2 /home/a/www/garage48/gui/protected/views/data/index.php(12): Data->search()
+#3 /home/a/www/yii/framework/web/CBaseController.php(126): require('/home/a/www/gar...')
+#4 /home/a/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/a/www/gar...', Array, true)
+#5 /home/a/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/a/www/gar...', Array, true)
+#6 /home/a/www/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#7 /home/a/www/garage48/gui/protected/controllers/DataController.php(60): CController->render('index', Array)
+#8 /home/a/www/yii/framework/web/actions/CInlineAction.php(49): DataController->actionIndex()
+#9 /home/a/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/a/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/a/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/a/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('data/index')
+#14 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/garage48/gui/data/index
+HTTP_REFERER=http://localhost/garage48/gui/site/index
+---
+2014/02/08 12:29:08 [error] [exception.CException] exception 'CException' with message 'Property "Data.value0" is not defined.' in /home/a/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/a/www/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('value0')
+#1 /home/a/www/yii/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('value0')
+#2 /home/a/www/yii/framework/web/helpers/CHtml.php(1980): CHtml::resolveValue(Object(Data), 'value0')
+#3 /home/a/www/yii/framework/web/helpers/CHtml.php(1257): CHtml::activeInputField('text', Object(Data), 'value0', Array)
+#4 /home/a/www/garage48/gui/protected/extensions/bootstrap/widgets/TbDataColumn.php(103): CHtml::activeTextField(Object(Data), 'value0', Array)
+#5 /home/a/www/garage48/gui/protected/extensions/bootstrap/widgets/TbDataColumn.php(68): TbDataColumn->renderFilterCellContent()
+#6 /home/a/www/yii/framework/zii/widgets/grid/CGridView.php(505): TbDataColumn->renderFilterCell()
+#7 /home/a/www/yii/framework/zii/widgets/grid/CGridView.php(483): CGridView->renderFilter()
+#8 /home/a/www/yii/framework/zii/widgets/grid/CGridView.php(453): CGridView->renderTableHeader()
+#9 /home/a/www/yii/framework/zii/widgets/CBaseListView.php(160): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /home/a/www/yii/framework/zii/widgets/CBaseListView.php(143): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /home/a/www/yii/framework/zii/widgets/CBaseListView.php(128): CBaseListView->renderContent()
+#13 /home/a/www/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /home/a/www/garage48/gui/protected/views/data/index.php(25): CBaseController->widget('bootstrap.widge...', Array)
+#15 /home/a/www/yii/framework/web/CBaseController.php(126): require('/home/a/www/gar...')
+#16 /home/a/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/a/www/gar...', Array, true)
+#17 /home/a/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/a/www/gar...', Array, true)
+#18 /home/a/www/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#19 /home/a/www/garage48/gui/protected/controllers/DataController.php(60): CController->render('index', Array)
+#20 /home/a/www/yii/framework/web/actions/CInlineAction.php(49): DataController->actionIndex()
+#21 /home/a/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /home/a/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#23 /home/a/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /home/a/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#25 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('data/index')
+#26 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/garage48/gui/data/index
+HTTP_REFERER=http://localhost/garage48/gui/site/index
+---
+2014/02/08 12:29:15 [error] [exception.CException] exception 'CException' with message 'Property "Data.value0" is not defined.' in /home/a/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/a/www/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('value0')
+#1 /home/a/www/yii/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('value0')
+#2 /home/a/www/yii/framework/web/helpers/CHtml.php(1980): CHtml::resolveValue(Object(Data), 'value0')
+#3 /home/a/www/yii/framework/web/helpers/CHtml.php(1257): CHtml::activeInputField('text', Object(Data), 'value0', Array)
+#4 /home/a/www/garage48/gui/protected/extensions/bootstrap/widgets/TbDataColumn.php(103): CHtml::activeTextField(Object(Data), 'value0', Array)
+#5 /home/a/www/garage48/gui/protected/extensions/bootstrap/widgets/TbDataColumn.php(68): TbDataColumn->renderFilterCellContent()
+#6 /home/a/www/yii/framework/zii/widgets/grid/CGridView.php(505): TbDataColumn->renderFilterCell()
+#7 /home/a/www/yii/framework/zii/widgets/grid/CGridView.php(483): CGridView->renderFilter()
+#8 /home/a/www/yii/framework/zii/widgets/grid/CGridView.php(453): CGridView->renderTableHeader()
+#9 /home/a/www/yii/framework/zii/widgets/CBaseListView.php(160): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /home/a/www/yii/framework/zii/widgets/CBaseListView.php(143): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /home/a/www/yii/framework/zii/widgets/CBaseListView.php(128): CBaseListView->renderContent()
+#13 /home/a/www/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /home/a/www/garage48/gui/protected/views/data/index.php(25): CBaseController->widget('bootstrap.widge...', Array)
+#15 /home/a/www/yii/framework/web/CBaseController.php(126): require('/home/a/www/gar...')
+#16 /home/a/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/a/www/gar...', Array, true)
+#17 /home/a/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/a/www/gar...', Array, true)
+#18 /home/a/www/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#19 /home/a/www/garage48/gui/protected/controllers/DataController.php(60): CController->render('index', Array)
+#20 /home/a/www/yii/framework/web/actions/CInlineAction.php(49): DataController->actionIndex()
+#21 /home/a/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /home/a/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#23 /home/a/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /home/a/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#25 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('data/index')
+#26 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/garage48/gui/data/index
+HTTP_REFERER=http://localhost/garage48/gui/
+---
+2014/02/08 13:08:42 [error] [exception.CException] exception 'CException' with message 'Property "Data.value0" is not defined.' in /home/a/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/a/www/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('value0')
+#1 /home/a/www/yii/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('value0')
+#2 /home/a/www/yii/framework/web/helpers/CHtml.php(1980): CHtml::resolveValue(Object(Data), 'value0')
+#3 /home/a/www/yii/framework/web/helpers/CHtml.php(1257): CHtml::activeInputField('text', Object(Data), 'value0', Array)
+#4 /home/a/www/garage48/gui/protected/extensions/bootstrap/widgets/TbDataColumn.php(103): CHtml::activeTextField(Object(Data), 'value0', Array)
+#5 /home/a/www/garage48/gui/protected/extensions/bootstrap/widgets/TbDataColumn.php(68): TbDataColumn->renderFilterCellContent()
+#6 /home/a/www/yii/framework/zii/widgets/grid/CGridView.php(505): TbDataColumn->renderFilterCell()
+#7 /home/a/www/yii/framework/zii/widgets/grid/CGridView.php(483): CGridView->renderFilter()
+#8 /home/a/www/yii/framework/zii/widgets/grid/CGridView.php(453): CGridView->renderTableHeader()
+#9 /home/a/www/yii/framework/zii/widgets/CBaseListView.php(160): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /home/a/www/yii/framework/zii/widgets/CBaseListView.php(143): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /home/a/www/yii/framework/zii/widgets/CBaseListView.php(128): CBaseListView->renderContent()
+#13 /home/a/www/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /home/a/www/garage48/gui/protected/views/data/index.php(25): CBaseController->widget('bootstrap.widge...', Array)
+#15 /home/a/www/yii/framework/web/CBaseController.php(126): require('/home/a/www/gar...')
+#16 /home/a/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/a/www/gar...', Array, true)
+#17 /home/a/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/a/www/gar...', Array, true)
+#18 /home/a/www/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#19 /home/a/www/garage48/gui/protected/controllers/DataController.php(60): CController->render('index', Array)
+#20 /home/a/www/yii/framework/web/actions/CInlineAction.php(49): DataController->actionIndex()
+#21 /home/a/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /home/a/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#23 /home/a/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /home/a/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#25 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('data/index')
+#26 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/garage48/gui/data/index
+HTTP_REFERER=http://localhost/garage48/gui/
+---
+2014/02/08 13:09:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---
+2014/02/08 13:20:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---
+2014/02/08 13:20:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---
+2014/02/08 13:21:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---
+2014/02/08 13:23:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---
+2014/02/08 13:23:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---
+2014/02/08 13:24:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---
+2014/02/08 13:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---
+2014/02/08 13:25:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---
+2014/02/08 13:26:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---
+2014/02/08 13:28:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---
+2014/02/08 13:29:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---
+2014/02/08 13:46:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---
+2014/02/08 13:48:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---
+2014/02/08 13:54:46 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.conditions" is not defined.' in /home/a/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/a/www/yii/framework/db/schema/CDbCriteria.php(160): CComponent->__set('conditions', Array)
+#1 /home/a/www/yii/framework/db/schema/CDbCriteria.php(493): CDbCriteria->__construct(Array)
+#2 /home/a/www/yii/framework/db/ar/CActiveRecord.php(221): CDbCriteria->mergeWith(Array)
+#3 /home/a/www/garage48/gui/protected/controllers/SiteController.php(32): CActiveRecord->__call('power', Array)
+#4 /home/a/www/garage48/gui/protected/controllers/SiteController.php(32): Data->power()
+#5 /home/a/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /home/a/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /home/a/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /home/a/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/a/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#10 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/garage48/gui/site/index
+HTTP_REFERER=http://localhost/garage48/gui/data/index
+---
+2014/02/08 13:57:16 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.conditions" is not defined.' in /home/a/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/a/www/yii/framework/db/schema/CDbCriteria.php(160): CComponent->__set('conditions', 't.sensor='Power...')
+#1 /home/a/www/yii/framework/db/schema/CDbCriteria.php(493): CDbCriteria->__construct(Array)
+#2 /home/a/www/yii/framework/db/ar/CActiveRecord.php(221): CDbCriteria->mergeWith(Array)
+#3 /home/a/www/garage48/gui/protected/controllers/SiteController.php(32): CActiveRecord->__call('power', Array)
+#4 /home/a/www/garage48/gui/protected/controllers/SiteController.php(32): Data->power()
+#5 /home/a/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /home/a/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /home/a/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /home/a/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/a/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#10 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/garage48/gui/site/index
+HTTP_REFERER=http://localhost/garage48/gui/data/index
+---
+2014/02/08 13:57:17 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.conditions" is not defined.' in /home/a/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/a/www/yii/framework/db/schema/CDbCriteria.php(160): CComponent->__set('conditions', 't.sensor='Power...')
+#1 /home/a/www/yii/framework/db/schema/CDbCriteria.php(493): CDbCriteria->__construct(Array)
+#2 /home/a/www/yii/framework/db/ar/CActiveRecord.php(221): CDbCriteria->mergeWith(Array)
+#3 /home/a/www/garage48/gui/protected/controllers/SiteController.php(32): CActiveRecord->__call('power', Array)
+#4 /home/a/www/garage48/gui/protected/controllers/SiteController.php(32): Data->power()
+#5 /home/a/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /home/a/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /home/a/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /home/a/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/a/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#10 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/garage48/gui/site/index
+HTTP_REFERER=http://localhost/garage48/gui/data/index
+---
+2014/02/08 13:57:18 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.conditions" is not defined.' in /home/a/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/a/www/yii/framework/db/schema/CDbCriteria.php(160): CComponent->__set('conditions', 't.sensor='Power...')
+#1 /home/a/www/yii/framework/db/schema/CDbCriteria.php(493): CDbCriteria->__construct(Array)
+#2 /home/a/www/yii/framework/db/ar/CActiveRecord.php(221): CDbCriteria->mergeWith(Array)
+#3 /home/a/www/garage48/gui/protected/controllers/SiteController.php(32): CActiveRecord->__call('power', Array)
+#4 /home/a/www/garage48/gui/protected/controllers/SiteController.php(32): Data->power()
+#5 /home/a/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /home/a/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /home/a/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /home/a/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/a/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#10 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/garage48/gui/site/index
+HTTP_REFERER=http://localhost/garage48/gui/data/index
+---
+2014/02/08 13:57:18 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.conditions" is not defined.' in /home/a/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/a/www/yii/framework/db/schema/CDbCriteria.php(160): CComponent->__set('conditions', 't.sensor='Power...')
+#1 /home/a/www/yii/framework/db/schema/CDbCriteria.php(493): CDbCriteria->__construct(Array)
+#2 /home/a/www/yii/framework/db/ar/CActiveRecord.php(221): CDbCriteria->mergeWith(Array)
+#3 /home/a/www/garage48/gui/protected/controllers/SiteController.php(32): CActiveRecord->__call('power', Array)
+#4 /home/a/www/garage48/gui/protected/controllers/SiteController.php(32): Data->power()
+#5 /home/a/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /home/a/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /home/a/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /home/a/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/a/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#10 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/garage48/gui/site/index
+HTTP_REFERER=http://localhost/garage48/gui/data/index
+---
+2014/02/08 13:57:18 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.conditions" is not defined.' in /home/a/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/a/www/yii/framework/db/schema/CDbCriteria.php(160): CComponent->__set('conditions', 't.sensor='Power...')
+#1 /home/a/www/yii/framework/db/schema/CDbCriteria.php(493): CDbCriteria->__construct(Array)
+#2 /home/a/www/yii/framework/db/ar/CActiveRecord.php(221): CDbCriteria->mergeWith(Array)
+#3 /home/a/www/garage48/gui/protected/controllers/SiteController.php(32): CActiveRecord->__call('power', Array)
+#4 /home/a/www/garage48/gui/protected/controllers/SiteController.php(32): Data->power()
+#5 /home/a/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /home/a/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /home/a/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /home/a/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/a/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#10 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/garage48/gui/site/index
+HTTP_REFERER=http://localhost/garage48/gui/data/index
+---
+2014/02/08 13:57:19 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.conditions" is not defined.' in /home/a/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/a/www/yii/framework/db/schema/CDbCriteria.php(160): CComponent->__set('conditions', 't.sensor='Power...')
+#1 /home/a/www/yii/framework/db/schema/CDbCriteria.php(493): CDbCriteria->__construct(Array)
+#2 /home/a/www/yii/framework/db/ar/CActiveRecord.php(221): CDbCriteria->mergeWith(Array)
+#3 /home/a/www/garage48/gui/protected/controllers/SiteController.php(32): CActiveRecord->__call('power', Array)
+#4 /home/a/www/garage48/gui/protected/controllers/SiteController.php(32): Data->power()
+#5 /home/a/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /home/a/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /home/a/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /home/a/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/a/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#10 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/garage48/gui/site/index
+HTTP_REFERER=http://localhost/garage48/gui/data/index
+---
+2014/02/08 13:57:19 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.conditions" is not defined.' in /home/a/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/a/www/yii/framework/db/schema/CDbCriteria.php(160): CComponent->__set('conditions', 't.sensor='Power...')
+#1 /home/a/www/yii/framework/db/schema/CDbCriteria.php(493): CDbCriteria->__construct(Array)
+#2 /home/a/www/yii/framework/db/ar/CActiveRecord.php(221): CDbCriteria->mergeWith(Array)
+#3 /home/a/www/garage48/gui/protected/controllers/SiteController.php(32): CActiveRecord->__call('power', Array)
+#4 /home/a/www/garage48/gui/protected/controllers/SiteController.php(32): Data->power()
+#5 /home/a/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /home/a/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /home/a/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /home/a/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/a/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#10 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/garage48/gui/site/index
+HTTP_REFERER=http://localhost/garage48/gui/data/index
+---
+2014/02/08 13:57:19 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.conditions" is not defined.' in /home/a/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/a/www/yii/framework/db/schema/CDbCriteria.php(160): CComponent->__set('conditions', 't.sensor='Power...')
+#1 /home/a/www/yii/framework/db/schema/CDbCriteria.php(493): CDbCriteria->__construct(Array)
+#2 /home/a/www/yii/framework/db/ar/CActiveRecord.php(221): CDbCriteria->mergeWith(Array)
+#3 /home/a/www/garage48/gui/protected/controllers/SiteController.php(32): CActiveRecord->__call('power', Array)
+#4 /home/a/www/garage48/gui/protected/controllers/SiteController.php(32): Data->power()
+#5 /home/a/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /home/a/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /home/a/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /home/a/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/a/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#10 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/garage48/gui/site/index
+HTTP_REFERER=http://localhost/garage48/gui/data/index
+---
+2014/02/08 13:57:39 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.conditions" is not defined.' in /home/a/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/a/www/yii/framework/db/schema/CDbCriteria.php(160): CComponent->__set('conditions', 't.sensor='Energ...')
+#1 /home/a/www/yii/framework/db/schema/CDbCriteria.php(493): CDbCriteria->__construct(Array)
+#2 /home/a/www/yii/framework/db/ar/CActiveRecord.php(221): CDbCriteria->mergeWith(Array)
+#3 /home/a/www/garage48/gui/protected/controllers/SiteController.php(33): CActiveRecord->__call('energy', Array)
+#4 /home/a/www/garage48/gui/protected/controllers/SiteController.php(33): Data->energy()
+#5 /home/a/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /home/a/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /home/a/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /home/a/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/a/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#10 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/garage48/gui/site/index
+HTTP_REFERER=http://localhost/garage48/gui/data/index
+---
+2014/02/08 14:00:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---
+2014/02/08 14:00:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---
+2014/02/08 14:20:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---

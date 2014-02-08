@@ -23,6 +23,10 @@ public function actionIndex()
 		));
 }
 public function actionGraph(){
+	Yii::app()->getClientScript()->registerScriptFile('//code.jquery.com/jquery-1.10.2.min.js');
+	Yii::app()->getClientScript()->registerScriptFile(Yii::app()->baseUrl.'/js/vendor/highcharts.js');
+	Yii::app()->getClientScript()->registerScriptFile(Yii::app()->baseUrl.'/js/chart.js');
+
 	$this->render('graph');
 }
 /**

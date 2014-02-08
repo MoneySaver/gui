@@ -6,3 +6,5 @@ $this->breadcrumbs=array(
 ?>
 
 <h1>Graph</h1>
+
+<div id="graph"></div>

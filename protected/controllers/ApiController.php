@@ -58,7 +58,7 @@ class ApiController extends Controller {
                 case 'oldie':
 
                     $criteria=new CDbCriteria();
-                    $criteria->compare('sensor','Power4');
+                    $criteria->compare('sensor','Power1');
                     $criteria->limit=10;
 
                     $data = Data::model()->findAll($criteria);

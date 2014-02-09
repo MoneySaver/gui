@@ -41,6 +41,11 @@ $money=$energy * $price;
 	</div>
 </div>
 </div>
+<div class="row">
+<div class="span12">
+<h2 class="text-center">http://sensey.ee</h2>
+</div>
+</div>
 <script type="text/javascript">
 var i = setInterval(function () {
         $.ajax( {

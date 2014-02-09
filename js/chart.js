@@ -26,7 +26,7 @@ $(function (){
 									y = Math.random();
 
 								$.ajax({
-									url:'http://185.20.136.207/gui/api/sync',
+									url:'http://sensey.ee/gui/api/sync',
 									success: function (data) {
 										if(lastPoint!==data.date){
 											lastPoint=data.date;
@@ -41,7 +41,7 @@ $(function (){
 					}
 				},
 				title: {
-					text: 'Energia graafik'
+					text: 'Energy graph'
 				},
 				xAxis: {
 					type: 'datetime',
@@ -49,7 +49,7 @@ $(function (){
 				},
 				yAxis: {
 					title: {
-						text: 'KW/h'
+						text: 'KWh'
 					},
 					plotLines: [{
 						value: 0,
@@ -68,7 +68,7 @@ $(function (){
 					data: (function() {
 						var data={};
 						$.ajax({
-							url:'http://localhost/garage48/gui/api/oldie',
+							url:'http://sensey.ee/gui/api/oldie',
 							DataType:'json',
 							async:false,
 							success: function (jsData) {

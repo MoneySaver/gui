@@ -588,3 +588,21 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/garage48/gui/images/logo.jpg
 ---
+2014/02/09 12:09:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---
+2014/02/09 12:19:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/8abe4933/img/glyphicons-halflings.png".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/8abe4933...')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
+HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
+---

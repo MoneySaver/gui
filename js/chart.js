@@ -66,17 +66,15 @@ $(function (){
 				series: [{
 					name: 'Sensor 1',
 					data: (function() {
-						// generate an array of random data
-						var data = [],
-							time = (new Date()).getTime(),
-							i;
-		
-						//for (i = -19; i <= 0; i++) {
-							data.push({
-								x: time-1000 * 1000,
-								y: 0
-							});
-						//}
+						var data={};
+						$.ajax({
+							url:'http://localhost/garage48/gui/api/oldie',
+							DataType:'json',
+							async:false,
+							success: function (jsData) {
+								data=jsData;
+							}
+						});
 						return data;
 					})()
 				}]

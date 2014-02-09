@@ -51,9 +51,23 @@ class ApiController extends Controller {
                         "power"=>$power,
                         "energy"=>$energy,
                         "money"=>$money,
-                        "temp"=>$temp,
+                        "temp"=>23,//$temp,
                         "date"=>$date,
                     );
+                    break;
+                case 'oldie':
+
+                    $criteria=new CDbCriteria();
+                    $criteria->compare('sensor','Power4');
+                    $criteria->limit=10;
+
+                    $data = Data::model()->findAll($criteria);
+
+                    $models=array();
+                    foreach ($data as $value) {
+                        $models[]=array(strtotime($value->created_at)*1000,round($value->value));
+                    }
+
                     break;
                 default:
                     // Model not implemented error

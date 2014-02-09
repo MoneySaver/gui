@@ -4,7 +4,7 @@
 <head>
 <?php Yii::app()->bootstrap->register(); ?>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="language" content="en" />
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/styles.css" />
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 <body>
@@ -18,7 +18,7 @@
 						array(
 							'class'=>'bootstrap.widgets.TbMenu',
 							'items'=>array(
-								array('label'=>'Home', 'icon'=>'home', 'url'=>array('/site/index')),
+								array('label'=>'Dashboard', 'icon'=>'home', 'url'=>array('/site/index')),
 								array('label'=>'Data', 'icon'=>'th-list', 'url'=>array('/data/index')),
 								array('label'=>'Graph', 'icon'=>'time', 'url'=>array('/data/graph')),
 								/*array('label'=>'Login', 'icon'=>'lock','url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),

@@ -12,7 +12,7 @@ $money=$energy * $price;
         <h1>Energy and Temperature monitor</h1>
     </div>
     <div class="span2">
-        <h3 class="pull-right">kWh - <?php echo $price; ?> €</h3>
+        <h3 class="pull-right">kWh <?php echo $price; ?> €</h3>
     </div>
 </div>
 <div class="row" style="margin-top: 20px;">
@@ -42,8 +42,17 @@ $money=$energy * $price;
 </div>
 </div>
 <div class="row">
-<div class="span12">
+<div class="span4">
 <h2 class="text-center">http://sensey.ee</h2>
+</div>
+
+<div class="span8 text-right">
+<a href="https://github.com/MoneySaver"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/github.jpg" alt="logo"></a>
+<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/garage48-logo.png" alt="logo">
+<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ohw-logo.png" alt="logo">
+<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/open-source-logo.png" alt="logo">
+<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/arduino-logo1.gif" alt="logo">
+<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/Raspberry-Pi-logo.jpg" alt="logo">
 </div>
 </div>
 <script type="text/javascript">

@@ -606,3 +606,39 @@ Stack trace:
 REQUEST_URI=/garage48/gui/assets/8abe4933/img/glyphicons-halflings.png
 HTTP_REFERER=http://localhost/garage48/gui/assets/8abe4933/css/bootstrap-yii.css
 ---
+2014/02/09 15:40:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/css/style.css
+HTTP_REFERER=http://localhost/garage48/gui/
+---
+2014/02/09 15:40:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/css/style.css
+HTTP_REFERER=http://localhost/garage48/gui/
+---
+2014/02/09 15:40:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/css/style.css
+HTTP_REFERER=http://localhost/garage48/gui/
+---
+2014/02/09 15:40:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /home/a/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/a/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /home/a/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/a/www/garage48/gui/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/garage48/gui/css/style.css
+HTTP_REFERER=http://localhost/garage48/gui/
+---

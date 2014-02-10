@@ -122,9 +122,11 @@ class Data extends CActiveRecord
 	}
 	public function scopes() {
         return array(
-            'power'=>array(
+            'last'=>array(
                 'order'=>$this->getTableAlias(false,false) . ".created_at DESC",
                 'limit'=>1,
+            ),
+            'power'=>array(
                 //'condition'=>"status>='10'",
                 'condition'=>$this->getTableAlias(false,false) . ".sensor='Power1'",
             ),
@@ -138,8 +140,16 @@ class Data extends CActiveRecord
                 'limit'=>1,
                 'condition'=>$this->getTableAlias(false,false) . ".sensor='temperatuur'",
             ),
+            'sensor'=>array(),
         );
     }
+    public function sensor($sensor) {
+	    $this->getDbCriteria()->mergeWith(array(
+	        'condition'=>$this->getTableAlias(false,false) . ".sensor=:sensor",
+	        'params'=>array(':sensor'=>$sensor),
+	    ));
+	    return $this;
+	}
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
 	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.

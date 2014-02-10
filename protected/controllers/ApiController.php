@@ -23,8 +23,18 @@ class ApiController extends Controller {
             // Get the respective model instance      
             switch($_GET['model']) {
                 case 'data':
-                    $model = Data::model()->power()->find();
-                    $models=array($model->state);
+                    if (isset($_GET["sensor"])){
+                        $model = Data::model()->last()->sensor($_GET["sensor"])->find();
+                        if ($model!==null){
+                            $value=round($model->value,(isset($_GET["dot"])?$_GET["dot"]:0));
+                            $models=array(strval($value));
+                        }else{
+                            $models=array("");
+                        }
+                    }else{
+                        $model = Data::model()->power()->find();
+                        $models=array($model->state);                        
+                    }
                     break;
                 case 'value':
                     if (isset($_GET["value"]) or $_GET["value"]!=""){
